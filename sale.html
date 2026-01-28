@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ULTRA | Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ULTRA</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="new-arrival.html">New Arrival</a>
+        <div class="dropdown">
+            <a href="clothes.html">Clothes ▾</a>
+            <div class="dropdown-content">
+                <a href="clothes.html#tops">Tops</a>
+                <a href="clothes.html#bottoms">Pants & Trousers</a>
+                <a href="clothes.html#outerwear">Outerwear</a>
+            </div>
+        </div>
+        <a href="sale.html" style="color:#b52b2b; font-weight:bold;">Sale</a>
+        <a href="cart.html">Cart <span id="cart-count"></span></a>
+    </nav>
+</header>
+
+<h2 class="section-title" style="color:#b52b2b;">End of Season Sale</h2>
+
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img">
+            <span style="position:absolute; top:10px; right:10px; background:red; color:white; padding:5px 10px; font-size:0.8rem;">-30%</span>
+            <img src="silk%20blouse.jpg">
+        </div>
+        <div class="product-info">
+            <p class="product-name">Summer Blouse</p>
+            <p class="product-price" style="color:#b52b2b;">
+                <span style="text-decoration:line-through; color:#999; font-size:0.9rem; margin-right:10px;">₹3,200</span>
+                ₹2,240
+            </p>
+            <button class="btn-add" onclick="addToCart(this, 'Summer Blouse', 2240, 'silk%20blouse.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">
+            <span style="position:absolute; top:10px; right:10px; background:red; color:white; padding:5px 10px; font-size:0.8rem;">-20%</span>
+            <img src="beige%20trousers.jpg">
+        </div>
+        <div class="product-info">
+            <p class="product-name">Beige Trousers</p>
+            <p class="product-price" style="color:#b52b2b;">
+                <span style="text-decoration:line-through; color:#999; font-size:0.9rem; margin-right:10px;">₹3,500</span>
+                ₹2,800
+            </p>
+            <button class="btn-add" onclick="addToCart(this, 'Beige Trousers', 2800, 'beige%20trousers.jpg')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer><p>© 2026 ULTRA FASHION</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

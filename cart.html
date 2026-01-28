@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ULTRA | Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ULTRA</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="new-arrival.html">New Arrival</a>
+        <div class="dropdown">
+            <a href="clothes.html">Clothes ▾</a>
+            <div class="dropdown-content">
+                <a href="clothes.html#tops">Tops</a>
+                <a href="clothes.html#bottoms">Pants & Trousers</a>
+                <a href="clothes.html#outerwear">Outerwear</a>
+            </div>
+        </div>
+        <a href="sale.html" style="color:#b52b2b;">Sale</a>
+        <a href="cart.html">Cart <span id="cart-count"></span></a>
+    </nav>
+</header>
+
+<div class="cart-container">
+    <h2 class="section-title" style="margin-top:0;">Your Bag</h2>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items-container">
+            </tbody>
+    </table>
+    
+    <div style="text-align:right;">
+        <h3>Total: <span id="cart-total">₹0</span></h3>
+        <button onclick="checkout()" style="background:#1a1a1a; color:white; padding:15px 40px; margin-top:20px; border:none; cursor:pointer;">CHECKOUT</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

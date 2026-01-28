@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ULTRA | New Arrivals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ULTRA</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="new-arrival.html" style="font-weight:bold;">New Arrival</a>
+        <div class="dropdown">
+            <a href="clothes.html">Clothes ▾</a>
+            <div class="dropdown-content">
+                <a href="clothes.html#tops">Tops</a>
+                <a href="clothes.html#bottoms">Pants & Trousers</a>
+                <a href="clothes.html#outerwear">Outerwear</a>
+            </div>
+        </div>
+        <a href="sale.html" style="color:#b52b2b;">Sale</a>
+        <a href="cart.html">Cart <span id="cart-count"></span></a>
+    </nav>
+</header>
+
+<section class="hero" style="height: 40vh; background-image: url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1920&q=80');">
+    <h1 style="font-size: 3rem;">JUST DROPPED</h1>
+</section>
+
+<h2 class="section-title">Spring Collection 2026</h2>
+
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="beigeknitsweater.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Beige Knit Sweater</p>
+            <p class="product-price">₹3,500</p>
+            <button class="btn-add" onclick="addToCart(this, 'Beige Knit Sweater', 3500, 'beigeknitsweater.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img"><img src="silkeveninggown.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Silk Evening Gown</p>
+            <p class="product-price">₹12,000</p>
+            <button class="btn-add" onclick="addToCart(this, 'Silk Evening Gown', 12000, 'silkeveninggown.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img"><img src="denimjacket.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Structure Denim Jacket</p>
+            <p class="product-price">₹4,500</p>
+            <button class="btn-add" onclick="addToCart(this, 'Structure Denim Jacket', 4500, 'denimjacket.jpg')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer><p>© 2026 ULTRA FASHION</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* IMPORT FONTS: Playfair Display & Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --text-dark: #1a1a1a;
+    --text-light: #f4f4f4;
+    --accent: #a67c52; /* Gold/Bronze */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); color: var(--text-dark); overflow-x: hidden; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+/* --- HEADER & NAV --- */
+header {
+    background: white; border-bottom: 1px solid #eee;
+    padding: 20px 50px; position: sticky; top: 0; z-index: 1000;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading); font-size: 2rem; letter-spacing: 5px; font-weight: 700; text-transform: uppercase;
+}
+
+.nav-links { display: flex; gap: 30px; align-items: center; }
+.nav-links a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; position: relative; }
+.nav-links a:hover { color: var(--accent); }
+
+/* DROPDOWN MENU */
+.dropdown { position: relative; display: inline-block; height: 100%; }
+.dropdown-content {
+    display: none; position: absolute; background-color: #ffffff;
+    min-width: 200px; box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000; top: 30px; left: -20px; border-top: 3px solid var(--accent);
+}
+.dropdown-content a {
+    padding: 15px 20px; display: block; border-bottom: 1px solid #f4f4f4; text-transform: capitalize;
+}
+.dropdown-content a:hover { background-color: #fafafa; padding-left: 25px; color: var(--accent); }
+.dropdown:hover .dropdown-content { display: block; animation: fadeIn 0.3s ease; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 90vh; width: 100%;
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    display: flex; align-items: center; justify-content: center;
+}
+.hero h1 { color: white; font-family: var(--font-heading); font-size: 4rem; text-shadow: 0 5px 15px rgba(0,0,0,0.3); letter-spacing: 5px; }
+
+/* --- PRODUCTS GRID --- */
+.section-title { text-align: center; font-family: var(--font-heading); font-size: 2.5rem; margin: 80px 0 50px; }
+
+.products-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px; padding: 0 10%; margin-bottom: 100px;
+}
+.product-card { text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: pointer; }
+.product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+.product-img { width: 100%; height: 400px; overflow: hidden; position: relative; }
+.product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+.product-card:hover .product-img img { transform: scale(1.1); }
+
+.product-info { padding: 20px; background: white; }
+.product-name { font-size: 1rem; margin-bottom: 10px; color: #555; }
+.product-price { font-weight: 700; color: #9c3b3b; font-family: var(--font-heading); font-size: 1.2rem; }
+
+/* ADD TO CART BUTTON */
+.btn-add {
+    display: block; width: 100%; padding: 12px; margin-top: 15px;
+    background: var(--text-dark); color: white; border: none;
+    text-transform: uppercase; letter-spacing: 1px; cursor: pointer;
+    opacity: 0; transform: translateY(10px); transition: 0.3s;
+}
+.product-card:hover .btn-add { opacity: 1; transform: translateY(0); }
+.btn-add:hover { background: var(--accent); }
+
+/* --- CART PAGE --- */
+.cart-container { padding: 50px 10%; min-height: 60vh; }
+.cart-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+.cart-table th { text-align: left; padding: 15px; border-bottom: 2px solid #ddd; }
+.cart-table td { padding: 15px; border-bottom: 1px solid #eee; }
+.remove-btn { color: red; cursor: pointer; border: none; background: none; font-size: 1.2rem; }
+.qty-selector button { width: 25px; height: 25px; cursor: pointer; }
+
+/* --- FOOTER --- */
+footer {
+    padding: 60px 10%; background: #f9f9f9; text-align: center; font-size: 0.8rem;
+    border-top: 1px solid #ddd;
+}

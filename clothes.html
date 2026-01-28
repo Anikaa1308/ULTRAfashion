@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ULTRA | Clothes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ULTRA</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="new-arrival.html">New Arrival</a>
+        <div class="dropdown">
+            <a href="clothes.html" style="font-weight:bold;">Clothes ▾</a>
+            <div class="dropdown-content">
+                <a href="#tops">Tops</a>
+                <a href="#bottoms">Pants & Trousers</a>
+                <a href="#outerwear">Outerwear</a>
+            </div>
+        </div>
+        <a href="sale.html" style="color:#b52b2b;">Sale</a>
+        <a href="cart.html">Cart <span id="cart-count"></span></a>
+    </nav>
+</header>
+
+<h2 class="section-title" id="tops">Tops & Blouses</h2>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="asymmetricalnecklinetop.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Asymmetrical Top</p>
+            <p class="product-price">₹2,800</p>
+            <button class="btn-add" onclick="addToCart(this, 'Asymmetrical Top', 2800, 'asymmetricalnecklinetop.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img"><img src="silk%20blouse.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Satin Silk Blouse</p>
+            <p class="product-price">₹3,200</p>
+            <button class="btn-add" onclick="addToCart(this, 'Satin Silk Blouse', 3200, 'silk%20blouse.jpg')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<h2 class="section-title" id="bottoms">Pants & Trousers</h2>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="beige%20trousers.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Wide Leg Beige Trousers</p>
+            <p class="product-price">₹3,500</p>
+            <button class="btn-add" onclick="addToCart(this, 'Wide Leg Beige Trousers', 3500, 'beige%20trousers.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img"><img src="off%20white%20pants.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Off-White Tailored Pants</p>
+            <p class="product-price">₹3,800</p>
+            <button class="btn-add" onclick="addToCart(this, 'Off-White Tailored Pants', 3800, 'off%20white%20pants.jpg')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<h2 class="section-title" id="outerwear">Coats & Blazers</h2>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="greytrenchcoat.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Belted Grey Trench</p>
+            <p class="product-price">₹6,500</p>
+            <button class="btn-add" onclick="addToCart(this, 'Belted Grey Trench', 6500, 'greytrenchcoat.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img"><img src="beige-blazer.jpg"></div>
+        <div class="product-info">
+            <p class="product-name">Oversized Beige Blazer</p>
+            <p class="product-price">₹5,200</p>
+            <button class="btn-add" onclick="addToCart(this, 'Oversized Beige Blazer', 5200, 'beige-blazer.jpg')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer><p>© 2026 ULTRA FASHION</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

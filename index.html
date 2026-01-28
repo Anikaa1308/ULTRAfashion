@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ULTRA | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ULTRA</div>
+    <nav class="nav-links">
+        <a href="index.html" style="font-weight:bold;">Home</a>
+        <a href="new-arrival.html">New Arrival</a>
+        <div class="dropdown">
+            <a href="clothes.html">Clothes ▾</a>
+            <div class="dropdown-content">
+                <a href="clothes.html#tops">Tops</a>
+                <a href="clothes.html#bottoms">Pants & Trousers</a>
+                <a href="clothes.html#outerwear">Outerwear</a>
+            </div>
+        </div>
+        <a href="sale.html" style="color:#b52b2b;">Sale</a>
+        <a href="cart.html">Cart <span id="cart-count"></span></a>
+    </nav>
+</header>
+
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1920&q=80');">
+    <h1>EST. 2026</h1>
+</section>
+
+<h2 class="section-title">Trending Now</h2>
+
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img">
+            <img src="silkeveninggown.jpg" alt="Gown">
+        </div>
+        <div class="product-info">
+            <p class="product-name">Silk Evening Gown</p>
+            <p class="product-price">₹12,000</p>
+            <button class="btn-add" onclick="addToCart(this, 'Silk Evening Gown', 12000, 'silkeveninggown.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img">
+            <img src="greytrenchcoat.jpg" alt="Coat">
+        </div>
+        <div class="product-info">
+            <p class="product-name">Belted Grey Trench</p>
+            <p class="product-price">₹6,500</p>
+            <button class="btn-add" onclick="addToCart(this, 'Belted Grey Trench', 6500, 'greytrenchcoat.jpg')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer>© 2026 ULTRA FASHION</footer>
+<script src="script.js"></script>
+</body>
+</html>
