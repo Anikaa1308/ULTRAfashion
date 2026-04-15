@@ -97,3 +97,17 @@ function checkout() {
 }
 
 window.onload = function() { updateCartCount(); loadCart(); };
+
+function searchFunction() {
+let query = document.getElementById("searchBox").value.toLowerCase();
+
+if(query.includes("gown")){
+alert("Showing Silk Evening Gown");
+}
+else if(query.includes("trench") || query.includes("coat")){
+alert("Showing Belted Grey Trench");
+}
+else{
+alert("No products found for: " + query);
+}
+}
